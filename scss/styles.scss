@@ -296,8 +296,8 @@ article{
   border-right: 6px;
   box-shadow: 0 0 20px -20px black;
   border-radius: 6px;
+  margin-left: 10px;
   overflow: hidden;
-  margin-left: 40px;
   margin-bottom: 40px;
   padding-bottom: 20px;
   background-color:  #fff;
@@ -305,21 +305,37 @@ article{
     width: 100%;
   }
   h2, p{
+    text-align: center;
     margin-top: 20px;
     padding: 0px 20px;
   }
   button{
+    justify-content: center;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 55px;
     padding: 10px 50px;
     font-size: 16px;
-    background: #46a2fd;
+    background: rgb(202, 7, 7);
     border: none;
     color: #fff;
     cursor: pointer;
     border-radius: 6px;
     &:hover{
       opacity: 0.9;
+    }
+    &.baby-blue{
+      margin-top: 20px;
+      margin-left: 70px;
+      padding: 10px 50px;
+      background: rgb(6, 141, 219);
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 16px;
+        &:hover{
+        opacity: 0.9;
+    }
     }
   }
 }
@@ -367,13 +383,13 @@ div.card-info h2 {
   text-align: center;
   font-size: 40px;
   background: rgb(39, 231, 71);
-  h3{
-    text-align: center;
-    font-size: 20px;
-  }
-  p {
-    margin: 5px 0 0 0;
-  }
+}
+div.card-info h3{
+  text-align: center;
+  font-size: 20px;
+}
+div.card-info p {
+  margin: 5px 0 0 0;
 }
 
 /* FORMULARIO CONTACTO */
@@ -461,12 +477,7 @@ div.card-info h2 {
     margin-left: 20px;
     letter-spacing: 3px;
   }
-  .container-aside{
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    flex-direction: column;
-    align-items: center;
+  
 }
 
 @media(max-width: 767px){
@@ -543,18 +554,9 @@ div.card-info h2 {
     padding-top: 30px;
     flex-direction: row;
     align-items: center;
+    margin-left: -10px;
 }
-.container-aside aside{
-  width: 320px;
-  border-right: 6px;
-  box-shadow: 0 0 20px -20px black;
-  border-radius: 6px;
-  overflow: hidden;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  background-color:  #fff;
-  align-items: center;
-}
+  
 
 }
 
@@ -576,6 +578,14 @@ div.card-info h2 {
     border-radius: 10px;
   }
 
+  .container-aside{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -10px;
+}
 }
 
 @media screen and (max-width: 420px){
@@ -598,6 +608,5 @@ div.card-info h2 {
 
 }
 
-h1{
-  color: red;
-}
+
+
