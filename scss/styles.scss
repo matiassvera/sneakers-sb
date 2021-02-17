@@ -461,7 +461,12 @@ div.card-info h2 {
     margin-left: 20px;
     letter-spacing: 3px;
   }
-    
+  .container-aside{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media(max-width: 767px){
@@ -506,6 +511,7 @@ div.card-info h2 {
       display: flex;
       justify-content: center;
       padding-top: 30px;
+
   }
 
 }
@@ -523,10 +529,33 @@ div.card-info h2 {
     width: 42%;
     height: 300px;
     background:  #fff;
-    padding: 20px;
-    margin: 20px 10px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 10px;
   }
+}
+
+@media screen and (max-width: 1020px){
+
+  .container-aside{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    flex-direction: row;
+    align-items: center;
+}
+.container-aside aside{
+  width: 320px;
+  border-right: 6px;
+  box-shadow: 0 0 20px -20px black;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  background-color:  #fff;
+  align-items: center;
+}
+
 }
 
 @media screen and (max-width: 580px){
@@ -566,5 +595,6 @@ div.card-info h2 {
     margin: 20px 10px;
     border-radius: 10px;
   }
+
 }
 
