@@ -244,28 +244,42 @@ article {
   border-right: 6px;
   box-shadow: 0 0 20px -20px black;
   border-radius: 6px;
+  margin-left: 10px;
   overflow: hidden;
-  margin-left: 40px;
   margin-bottom: 40px;
   padding-bottom: 20px;
   background-color: #fff; }
   .container-aside aside img {
     width: 100%; }
   .container-aside aside h2, .container-aside aside p {
+    text-align: center;
     margin-top: 20px;
     padding: 0px 20px; }
   .container-aside aside button {
+    justify-content: center;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 55px;
     padding: 10px 50px;
     font-size: 16px;
-    background: #46a2fd;
+    background: #ca0707;
     border: none;
     color: #fff;
     cursor: pointer;
     border-radius: 6px; }
     .container-aside aside button:hover {
       opacity: 0.9; }
+    .container-aside aside button.baby-blue {
+      margin-top: 20px;
+      margin-left: 70px;
+      padding: 10px 50px;
+      background: #068ddb;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 16px; }
+      .container-aside aside button.baby-blue:hover {
+        opacity: 0.9; }
 
 .lanzamientos h1 {
   padding: 30px;
@@ -304,14 +318,16 @@ div.card-info h2 {
   text-align: center;
   font-size: 40px;
   background: #27e747; }
-  div.card-info h2 h3 {
-    text-align: center;
-    font-size: 20px; }
-  div.card-info h2 p {
-    margin: 5px 0 0 0; }
 
-/* FORMULARIO CONTACTO */
+div.card-info h3 {
+  text-align: center;
+  font-size: 20px; }
+
+div.card-info p {
+  margin: 5px 0 0 0; }
+
 /* ¿QUIÉNES SOMOS? */
+/* FORMULARIO CONTACTO */
 /* RESPONSIVE */
 @media (max-width: 1033px) {
   nav {
@@ -363,9 +379,7 @@ div.card-info h2 {
     font-size: 50px;
     font-weight: 600;
     margin-left: 20px;
-    letter-spacing: 3px; }
-  .container-aside {
-    flex-direction: column; } }
+    letter-spacing: 3px; } }
 
 @media (max-width: 767px) {
   .columna {
@@ -415,7 +429,8 @@ div.card-info h2 {
     justify-content: center;
     padding-top: 30px;
     flex-direction: row;
-    align-items: center; } }
+    align-items: center;
+    margin-left: -10px; } }
 
 @media screen and (max-width: 580px) {
   .cards .card-container {
@@ -429,7 +444,14 @@ div.card-info h2 {
     background: #fff;
     padding: 20px;
     margin: 20px 10px;
-    border-radius: 10px; } }
+    border-radius: 10px; }
+  .container-aside {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -10px; } }
 
 @media screen and (max-width: 420px) {
   .cards .card-container {
