@@ -26,24 +26,24 @@ nav{
     font-size: 35px;
     font-weight: 600;
 }
-ul{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  li{
-    margin: 0 5px;
-    a{
-      color: #f2f2f2;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 500;
-      padding: 8px 15px;
-      border-radius: 5px;
-      letter-spacing: 1px;
-      transition: all 0.3s ease;
-      &:hover{
-        color: #fff;
-        background: #1709e0;
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    li{
+      margin: 0 5px;
+      a{
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        &:hover{
+          color: #fff;
+          background: #1709e0;
       }
     }
   }
@@ -136,7 +136,7 @@ span {
 /* HOME CARDS */
 
 .card-container{
-  padding: 20px;
+  padding: 30px;
   background-image: url(/img/pattern.png);
   display: flex;
   align-items: center;
@@ -297,6 +297,13 @@ article{
 }
 }
 
+h1.titulo-seccion{
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+}
+
 /* ASIDE */
 
 .container-aside aside{
@@ -404,7 +411,118 @@ div.card-info p {
 
 /* ¿QUIÉNES SOMOS? */
 
+header.sobre-nosotros h1 {
+	font-size: 50px;
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fff;
+  text-align: center;
+}
 
+
+header a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background: #262626;
+	padding: 10px 30px;
+	margin-top: 10px;
+}
+header p {
+	padding: 30px;
+	text-align:left;
+	color: #fff;
+}
+
+header{
+  background: url(/img/banner2.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+/* CARDS QUIENES SOMOS */
+.tarjetas img {
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 3px 3px 10px 0 rgba($color: #000000, $alpha: 0.3);
+  margin-bottom: 1rem;
+}
+
+.container-sobre-nosotros {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.text {
+  margin-bottom: 4rem;
+  h1 {
+    font-size: 3rem;
+    font-family: "Odibee Sans", cursive;
+    & span {
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    & span {
+      color: red;
+      font-size: 2rem;
+    }
+  }
+}
+
+.card1,
+.card2,
+.card3 {
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px 0 rgba($color: #000000, $alpha: 0.3);
+  h3 {
+    color: #3b5998;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  i {
+    padding: 0.6rem;
+    background: rgb(7, 21, 223);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    color: white;
+    box-shadow: 3px 3px 5px 0 rgba($color: #000000, $alpha: 0.3);
+    
+  }
+  transition: 500ms;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
 
 /* FORMULARIO CONTACTO */
 
@@ -513,7 +631,9 @@ nav ul li a:hover{
     max-width: 1000px;
     padding: 0 0 20px 0 ;
 }
-
+.container-sobre-nosotros {
+  height: 42vh;
+}
 }
 
 @media screen and (max-width: 1020px){
@@ -562,6 +682,9 @@ article{
   align-items: center;
   margin-left: -10px;
 }
+.container-sobre-nosotros {
+  height: 60vh;
+}
 }
 
 @media screen and (max-width: 978px) {
@@ -574,3 +697,47 @@ article{
     margin: 20px 0;
   }
 }
+
+
+
+@media only screen and (max-width: 767px){
+  header h1{
+      font-size: 30px;
+  }
+  header p{
+      display: none;
+  }
+  header a{
+      padding: 5px 15px;
+  }
+  .container-sobre-nosotros {
+    height: 150vh;
+  }
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+} 
+
+@media (max-width: 500px) {
+  .container-sobre-nosotros {
+    height: 130vh;
+  }
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    &:hover {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container-sobre-nosotros {
+    height: 130vh;
+  }
+}
+
