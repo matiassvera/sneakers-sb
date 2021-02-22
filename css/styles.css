@@ -8,7 +8,7 @@
 .pattern {
   background-image: url(/img/pattern.png); }
 
-/* MENU DE NAVEGACIÓN */
+/******** MENU DE NAVEGACIÓN ********/
 nav {
   display: flex;
   height: 80px;
@@ -51,7 +51,7 @@ nav .menu-btn i {
 input[type="checkbox"] {
   display: none; }
 
-/* BANNER PRINCIPAL */
+/******** BANNER PRINCIPAL ********/
 .banner {
   background: url(../img/banner.jpg);
   width: 100%;
@@ -111,7 +111,7 @@ input[type="checkbox"] {
     color: #fff;
     transition: .5s; }
 
-/* HOME CARDS */
+/******* HOME CARDS *******/
 .card-container {
   padding: 30px;
   background-image: url(/img/pattern.png);
@@ -159,7 +159,7 @@ input[type="checkbox"] {
   opacity: 1;
   visibility: visible; }
 
-/* FOOTER */
+/******* FOOTER *******/
 .container-footer {
   max-width: 1170px;
   margin: auto; }
@@ -217,7 +217,7 @@ input[type="checkbox"] {
       color: #24262b;
       background-color: #ffffff; }
 
-/* LANZAMIENTOS */
+/******* LANZAMIENTOS *******/
 .container-content {
   width: 1200px;
   margin: auto;
@@ -237,7 +237,9 @@ article {
   article h2 {
     margin-top: 20px;
     font-weight: 500;
-    font-size: 40px; }
+    font-size: 40px;
+    background-color: #ff7300;
+    padding: 6px; }
   article p {
     margin-top: 20px;
     font-size: 18px;
@@ -252,7 +254,7 @@ h1.titulo-seccion {
   padding: 30px;
   font-size: 50px; }
 
-/* ASIDE */
+/******** ASIDE *******/
 .container-aside aside {
   width: 320px;
   border-right: 6px;
@@ -302,7 +304,7 @@ h1.titulo-seccion {
   color: #fff;
   font-size: 40px; }
 
-/* TOP 10 */
+/******* TOP 10 *******/
 .cards-top10 {
   display: flex;
   align-items: flex-start;
@@ -335,34 +337,12 @@ div.card-info h2 {
 
 div.card-info h3 {
   text-align: center;
-  font-size: 20px; }
+  font-size: 30px; }
 
 div.card-info p {
   margin: 5px 0 0 0; }
 
-/* ¿QUIÉNES SOMOS? */
-header.sobre-nosotros h1 {
-  font-size: 50px;
-  font-weight: 700;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #fff;
-  text-align: center; }
-
-header a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  background: #262626;
-  padding: 10px 30px;
-  margin-top: 10px; }
-
-header p {
-  padding: 30px;
-  text-align: left;
-  color: #fff; }
-
+/******** ¿QUIÉNES SOMOS? ********/
 header {
   background: url(/img/banner2.jpg);
   height: 100vh;
@@ -374,8 +354,27 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: column; }
+  header.sobre-nosotros h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-align: center; }
+  header p {
+    padding: 30px;
+    text-align: left;
+    color: #fff; }
+  header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background: #262626;
+    padding: 10px 30px;
+    margin-top: 10px; }
 
-/* CARDS QUIENES SOMOS */
+/******** CARDS QUIENES SOMOS ********/
 .tarjetas img {
   border-radius: 10px;
   width: 100%;
@@ -406,36 +405,26 @@ header {
       color: red;
       font-size: 2rem; }
 
-.card1,
-.card2,
-.card3 {
+.card1, .card2, .card3 {
   background: white;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.3);
   transition: 500ms; }
-  .card1 h3,
-  .card2 h3,
-  .card3 h3 {
+  .card1 h3, .card2 h3, .card3 h3 {
     color: #3b5998;
     margin-bottom: 10px; }
-  .card1 p,
-  .card2 p,
-  .card3 p {
+  .card1 p, .card2 p, .card3 p {
     margin-bottom: 10px;
     font-weight: bold; }
-  .card1 i,
-  .card2 i,
-  .card3 i {
+  .card1 i, .card2 i, .card3 i {
     padding: 0.6rem;
     background: #0715df;
     border-radius: 50%;
     margin-bottom: 1rem;
     color: white;
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3); }
-  .card1:hover,
-  .card2:hover,
-  .card3:hover {
+  .card1:hover, .card2:hover, .card3:hover {
     transform: scale(1.1, 1.1); }
 
 .tarjetas {
@@ -443,8 +432,67 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem; }
 
-/* FORMULARIO CONTACTO */
-/* RESPONSIVE */
+/******* FORMULARIO DE CONTACTO ********/
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em; }
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+  padding-bottom: 10px; }
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); }
+
+.contact-wrapper > * {
+  padding: 1em; }
+
+.contact-form {
+  background: #222222; }
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .contact-form form label {
+      display: block; }
+    .contact-form form p {
+      margin: 0;
+      padding: 1em;
+      color: #fff; }
+    .contact-form form .block {
+      grid-column: 1 / 3; }
+    .contact-form form button, .contact-form form input, .contact-form form textarea {
+      width: 100%;
+      padding: .7em;
+      border: none;
+      background: none;
+      outline: 0;
+      color: #fff;
+      border-bottom: 1px solid #1709e0; }
+    .contact-form form button {
+      background: #1709e0;
+      border: 0;
+      text-transform: uppercase;
+      padding: 1em; }
+      .contact-form form button:hover, .contact-form form button:focus {
+        background: #077ac7;
+        color: #fff;
+        transition: background-color 1s ease-out;
+        outline: 0; }
+
+.contact-info {
+  background: #000; }
+  .contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0; }
+  .contact-info ul {
+    list-style: none;
+    padding: 0; }
+
+/******** RESPONSIVE ********/
 @media (max-width: 1033px) {
   nav {
     padding: 0 40px 0 50px; } }
@@ -573,8 +621,21 @@ header {
   .card1:hover,
   .card2:hover,
   .card3:hover {
-    transform: scale(1, 1); } }
+    transform: scale(1, 1); }
+  h1.titulo-seccion {
+    font-size: 35px; } }
 
 @media screen and (max-width: 360px) {
   .container-sobre-nosotros {
     height: 130vh; } }
+
+@media (min-width: 700px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr; }
+  .contact-wrapper > * {
+    padding: 2em; }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left; } }
