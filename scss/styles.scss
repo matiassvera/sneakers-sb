@@ -146,7 +146,7 @@ span {
   height: 280px;
   max-width: 350px;
   margin: 0 20px;
-  background: white;
+  background: #fff;
   transition: 0.4s;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   border-radius: 6px;
@@ -472,24 +472,11 @@ header{
 
 .text {
   margin-bottom: 4rem;
-  h1 {
-    font-size: 3rem;
-    font-family: "Odibee Sans", cursive;
-    & span {
-      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
-    }
-  }
-  h2 {
-    font-size: 1.5rem;
-    & span {
-      color: red;
-      font-size: 2rem;
-    }
-  }
+
 }
 
 .card1, .card2, .card3 {
-  background: white;
+  background: #fff;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 3px 3px 10px 0 rgba($color: #000000, $alpha: 0.3);
@@ -507,7 +494,7 @@ header{
     background: rgb(7, 21, 223);
     border-radius: 50%;
     margin-bottom: 1rem;
-    color: white;
+    color: #fff;
     box-shadow: 3px 3px 5px 0 rgba($color: #000000, $alpha: 0.3);
     
   }
@@ -599,6 +586,24 @@ header{
   }
 }
 
+.contact-info {
+  background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  color: #fff;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact-info li{
+  padding: 10px;
+  font-size: 20px;
+}
+
+.contact-info h4{
+  font-size: 25px;
+}
 
 /******** RESPONSIVE ********/
 
@@ -701,8 +706,9 @@ nav ul li a:hover{
     max-width: 1000px;
     padding: 0 0 20px 0 ;
 }
+
 .container-sobre-nosotros {
-  height: 42vh;
+  height: 75vh;
 }
 }
 
@@ -724,7 +730,6 @@ article{
     padding-top: 30px;
 
 }
-
 }
 
 
@@ -738,8 +743,6 @@ article{
   align-items: center;
   margin-left: -10px;
 }
-
-
 }
 
 @media screen and (max-width: 580px){
@@ -767,8 +770,6 @@ article{
     margin: 20px 0;
   }
 }
-
-
 
 @media only screen and (max-width: 767px){
   header h1{
@@ -823,9 +824,7 @@ article{
   .contact-wrapper > * {
       padding: 2em;
   }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
+  .contact-info h4, .contact-info ul{
       text-align: left;
   }
 }
